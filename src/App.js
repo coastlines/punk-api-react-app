@@ -10,7 +10,6 @@ class App extends React.Component{
     super(props)
     this.state = {
       beers: [],
-      likes: 0
     }
   }
 

@@ -23,13 +23,13 @@ class List extends React.Component{
   Listing = ()=>{
     console.log(this.props)
     return(
-      <div >
+      <div className = 'border' >
       <img className = "size" src={this.props.beer.image_url}/>
       <h1>{this.props.beer.name}h1</h1>
       <h3>{this.props.beer.tagline}</h3>
       <p>{this.props.beer.description}</p>
       <button  onClick = {this.Counter}>like</button>
-      <h2>{this.state.likes}</h2>
+      <h2>Likes : {this.state.likes}</h2>
     </div>
     )
   }
